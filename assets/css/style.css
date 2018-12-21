@@ -1,0 +1,371 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(255, 254, 253);
+    font-family: 'Alice', serif;
+    font-size: 1rem;
+    color: rgb(77, 77, 77) !important;
+}
+
+h1 {
+    font-family: 'Noto Serif SC', serif;
+    color: rgb(226, 224, 224);
+    font-size: 4rem;
+    font-weight: normal;
+    font-size: 3em;
+    letter-spacing: 1px;
+    line-height: 2em;
+    margin: 0;
+    text-align: center;
+    text-shadow: 1px 1px 0 #f5f5f5, 2px 2px 0 #ccc;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+.presentation {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -200px;
+    right: 0;
+    /* transform: translate(-50%, -50%); */
+}
+
+.presentation p {
+    font-size: 2rem;
+    /* font-family: 'Crimson Text', serif; */
+}
+
+#gallery p {
+    font-size: 1rem;
+}
+
+#aboutMe p {
+    font-size: 1.21429rem;
+}
+
+main {
+    width: 70%;
+    margin: auto auto;
+}
+
+
+/***** Navbar *****/
+
+nav {
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    background-color: #24292e;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+/***** Header *****/
+
+.jumbo {
+    background: url("/img/projects/IMG_3543.jpg") no-repeat top center;
+    position: relative;
+    background-size: cover;
+    color: rgb(41, 39, 39);
+    overflow: hidden;
+    height: 1200px;
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.51); */
+    z-index: -1;
+}
+
+.headerTitleOverlay {
+    position: absolute;
+    margin-top: -50px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.overlayText {
+    position: absolute;
+    margin-top: -50px;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+/***** Footer *****/
+
+footer {
+    background-color: #24292e;
+    color: hsla(0, 0%, 100%, .75);
+}
+
+.contact {
+    background: #1ab394;
+    position: relative;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    color: rgb(41, 39, 39);
+    overflow: hidden;
+    height: 300px;
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.51); */
+}
+
+.contact img {
+    width: 200px;
+}
+
+.social {
+    width: 3.2rem;
+    height: 3.2rem;
+    border: 0.1rem solid #ffffff;
+    border-radius: 100%;
+    font-size: 1.4rem;
+    line-height: 3.2rem;
+    transition: 0.2s background linear, 0.2s color linear;
+}
+
+.social:hover {
+    background-color: #727070;
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.hoverLine {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.hoverLine:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #1ab394;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.hoverLine:hover:before {
+    text-decoration: none;
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+/***** Icons social icons*****/
+
+.icon-twitter {
+    color: #099af5;
+}
+
+.icon-instagram {
+    color: #e71f44;
+}
+
+.icon-github {
+    color: rgb(0, 0, 0);
+}
+
+.icon-linkedin {
+    color: rgb(0, 119, 181);
+}
+
+.fa-html5 {
+    color: #DD4B25;
+}
+
+.fa-css3 {
+    color: #2196F3;
+}
+
+.fa-js-square {
+    color: #EFD81D;
+}
+
+.fa-2x {
+    margin-right: 5px;
+}
+
+.fa-eye {
+    color: #1ab394;
+}
+
+.fa-sass {
+    color: #C96195;
+}
+
+.fa-code-branch {
+    color: black;
+}
+
+.btn-group-lg>.btn,
+.btn-lg {
+    padding: .3rem .3rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+}
+
+
+/***** hr style *****/
+
+.underlined {
+    width: 7em;
+    border-color: #1ab394!important;
+    margin-bottom: 70px;
+}
+
+.hrStyle {
+    border-color: rgb(219, 217, 217) !important;
+}
+
+
+/* Link Styles */
+
+a {
+    text-decoration: none;
+    color: #111;
+    cursor: pointer!important;
+}
+
+a:hover {
+    color: #0f0f0f;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* ---- Photo Overlay ---- */
+
+.photo-overlay {
+    color: #fff;
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    display: flex;
+    /* For centering text inside .photo-overlay */
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .7);
+}
+
+.photo-overlay {
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.photo-overlay:hover {
+    opacity: 1;
+}
+
+
+/* Images*/
+
+img {
+    width: 100%;
+}
+
+.img-fluid {
+    width: 100%;
+    transition: transform 1s cubic-bezier(.7, -0.39, .31, 1.38);
+}
+
+.img-fluid:hover {
+    transform: scale(1.1);
+}
+
+strong {
+    color: #1ab394;
+    font-weight: 400;
+    text-shadow: 1px 1px 0 #f5f5f5, 2px 2px 0 #ccc;
+}
+
+.btnFloat {
+    background-color: #1ab394;
+    padding: 10px;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: transparent;
+}
+
+
+/* @media (min-width: 992px) {
+    #aboutSectionText {
+        margin-left: -7.14286rem;
+        background-color: #ffffff;
+        padding: 10px;
+        /* color: rgb(44, 43, 43);
+    } */
+
+
+/***** Media query *****/
+
+@media screen and (max-width:425px) {
+    .jumbo {
+        background: url("/img/projects/header_img.jpeg") no-repeat top center;
+        position: relative;
+        background-size: cover;
+        color: rgb(41, 39, 39);
+        overflow: hidden;
+        height: 1200px;
+        width: 100%;
+        /* background-color: rgba(0, 0, 0, 0.51); */
+        z-index: -1;
+    }
+    h4 {
+        font-size: 0.9rem;
+    }
+    #gallery p {
+        font-size: 0.7rem;
+    }
+}
+
+.height-600 {
+    min-height: 350px;
+}
+
+.flex-centered {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.container-image {
+    background-color: #f0f0f0 !important;
+}
+
+.bg-white {
+    background-color: #fff !important;
+}
