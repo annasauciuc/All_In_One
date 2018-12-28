@@ -68,9 +68,9 @@ var palette = {
 var colors = d3.scale.category20();
 
 var nodes = [
-    { name: 'Html5', src: "../../img/skills/html.svg" },
-    { name: 'Css3', src: "../../img/skills/css64.svg" },
-    { name: 'Ubuntu', src: "../../img/skills/linux.svg", target: [0], value: 58 },
+    { name: 'Html5', src: "./../../img/skills/html.svg" },
+    { name: 'Css3', src: "./../../img/skills/css64.svg" },
+    { name: 'Ubuntu', src: "./../../img/skills/linux.svg", target: [0], value: 58 },
     { name: 'Javascript', src: "../../img/skills/javascript.svg", target: [0, 1], value: 65 },
     {
         name: 'Sass',
