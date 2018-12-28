@@ -365,7 +365,7 @@
                 background-size: cover;
                 color: rgb(41, 39, 39);
                 overflow: hidden;
-                height: 500px;
+                height: 700px;
                 width: 100%;
                 /* background-color: rgba(0, 0, 0, 0.51); */
                 z-index: -1;
@@ -379,9 +379,6 @@
             .headerTitleOverlay {
                 font-size: 50px;
                 margin-top: 30px;
-            }
-            #hobbies div {
-                margin: 0 0px 0px 20px;
             }
         }
         
@@ -418,5 +415,11 @@
             }
             .main-header-bb__content span:nth-child(4) {
                 background-color: #fce263;
+            }
+        }
+        
+        @media screen and (max-width: 629px) {
+            #hobbies div {
+                margin: 0 0px 3px 30px;
             }
         }
