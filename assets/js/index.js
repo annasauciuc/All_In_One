@@ -10,12 +10,16 @@ function translateIndex(data) {
     document.getElementById("contactTitle").innerHTML = data.CONTACT_TITLE;
     document.getElementById("contactText").innerHTML = data.CONTACT_TEXT;
     document.getElementById("footerQuote").innerHTML = data.FOOTER_TEXT;
-    document.getElementById("skills").innerHTML = data.SKILLS;
+    document.getElementById("codeQuote").innerHTML = data.CODEQUOTE;
+    document.getElementById("authorQuote").innerHTML = data.AUTHOR;
+    document.getElementById("hobbiesTitle").innerHTML = data.HOBBIESTITLE;
+
 
 }
 
 function translateProjects(data) {
     //  document.getElementById("projectsTitle").innerHTML = data.PROJECTS;
+    document.getElementById("skills").innerHTML = data.SKILLS;
     document.getElementById("floatsProject").innerHTML = data.FLOATS_TITLE;
     document.getElementById("floatsProjectText").innerHTML = data.FLOATS_TEXT;
     document.getElementById("whoProject").innerHTML = data.HOW_I_AM_TITLE;

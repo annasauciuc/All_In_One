@@ -10,7 +10,7 @@
     "FLOATS_TITLE": "Floats en todos lados!!",
     "FLOATS_TEXT": "Este es mi primer proyecto responsive con floats. Elegí uno de los mejores pintores para mostrar sus cuadros. 'Leonid Afremov'",
     "HOW_I_AM_TITLE": "Quien soy?",
-    "HOW_I_AM_TEXT": "Es la primera pagina de presentación sobre mí. Quedan aún muchas cosas por decir...",
+    "HOW_I_AM_TEXT": "Es la primera pagina de presentación sobre mí.",
     "ADMINISTRATION_TITLE": "Panel de administracion",
     "ADMINISTRATION_TEXT": "Es un proyecto en cuatro, un proyecto con muchas cosas nuevas, mucha presión y mucha motivación. Solamente ponle esfuerzo y tiempo...",
     "NETFLIX_TITLE": "Netflix Mockup Pixel Perfect",
@@ -22,5 +22,7 @@
     "CONTACT_TITLE": "Contacta conmigo",
     "CONTACT_TEXT": "Si quieres contactar conmigo :",
     "FOOTER_TEXT": "Mantente apasionado y lo lograras, estoy segura!",
-    "SKILLS": "Mis habilidades "
+    "SKILLS": "Mis habilidades ",
+    "CODEQUOTE": "Programar no es un trabajo, es un estilo de vida",
+    "AUTHOR": "Un tio inteligente"
 }
