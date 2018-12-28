@@ -36,8 +36,8 @@
             margin: 0 0px 5px 5px;
             width: 110px;
             height: 110px;
-            -webkit-clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
-            clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+            -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
             background-color: #24292e;
             color: #ffffff;
             font-size: 16px;
@@ -51,9 +51,11 @@
         }
         
         .hobbies div img {
-            margin: 0 0px 10px 0;
-            -webkit-clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
-            clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+            /* width: 200px;
+            height: 300px;
+            margin-top: -10.14286rem; */
+            -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
         }
         
         .presentation {
@@ -415,7 +417,7 @@
         }
         
         @media screen and (max-width: 629px) {
-            #hobbies div {
+            /* #hobbies div {
                 margin: 0 0px 3px 30px;
-            }
+            } */
         }
