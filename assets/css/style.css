@@ -319,6 +319,27 @@
         .navbar-dark .navbar-toggler {
             border-color: transparent;
         }
+        
+        .flex-centered {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+        
+        .container-image {
+            background-color: #f0f0f0 !important;
+        }
+        
+        .bg-white {
+            background-color: #fff !important;
+        }
+        
+        .height-600 {
+            min-height: 350px;
+        }
         /* @media (min-width: 992px) {
     #aboutSectionText {
         margin-left: -7.14286rem;
@@ -352,24 +373,12 @@
             }
         }
         
-        .height-600 {
-            min-height: 350px;
-        }
-        
         @media screen and (max-width: 1199px) {
             .main-header-bb__content span {
                 height: 2px;
                 width: 30px;
                 margin-bottom: 5px;
                 border-radius: 6px;
-                transition-property: opacity, -webkit-transform, -webkit-filter;
-                transition-property: opacity, transform, filter;
-                transition-property: opacity, transform, filter, -webkit-transform, -webkit-filter;
-                transition-duration: 150ms;
-                transition-timing-function: ease-in-out;
-                transition-delay: 0s;
-                -webkit-transform-origin: 100% 0;
-                transform-origin: 100% 0;
             }
             .main-header-bb__content {
                 display: -webkit-flex;
@@ -393,21 +402,4 @@
             .main-header-bb__content span:nth-child(4) {
                 background-color: #fce263;
             }
-        }
-        
-        .flex-centered {
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-align: center;
-            align-items: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-        }
-        
-        .container-image {
-            background-color: #f0f0f0 !important;
-        }
-        
-        .bg-white {
-            background-color: #fff !important;
         }
