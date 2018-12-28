@@ -3,7 +3,7 @@ function translateIndex(data) {
     document.getElementById("menuMyProjects").innerHTML = data.MENU_MY_PROJECTS;
     document.getElementById("menuAbout").innerHTML = data.MENU_ABOUT_ME;
     document.getElementById("menuContact").innerHTML = data.CONTACT;
-    document.getElementById("presentationText").innerHTML = data.SUBTITLE;
+    // document.getElementById("presentationText").innerHTML = data.SUBTITLE;
     document.getElementById("presentationTitle").innerHTML = data.TITLE;
     document.getElementById("aboutSection").innerHTML = data.SECTION_ABOUT_ME_TITLE;
     document.getElementById("aboutSectionText").innerHTML = data.SECTION_ABOUT_ME_TEXT;
@@ -12,7 +12,7 @@ function translateIndex(data) {
     document.getElementById("footerQuote").innerHTML = data.FOOTER_TEXT;
     document.getElementById("codeQuote").innerHTML = data.CODEQUOTE;
     document.getElementById("authorQuote").innerHTML = data.AUTHOR;
-    document.getElementById("hobbiesTitle").innerHTML = data.HOBBIESTITLE;
+    //  document.getElementById("hobbiesTitle").innerHTML = data.HOBBIESTITLE;
 
 
 }

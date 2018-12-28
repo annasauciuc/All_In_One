@@ -120,15 +120,6 @@
             transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
         }
-        
-        .overlayText {
-            position: absolute;
-            margin-top: -50px;
-            top: 32%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-        }
         /***** Footer *****/
         
         footer {
@@ -355,9 +346,21 @@
         }
         
         .quote {
-            margin-top: 10px;
+            padding-top: 10px;
             font-size: 1.5rem;
             line-height: 28px;
+        }
+        
+        .quoteSection {
+            background: url("/img/projects/computer-desk-hand-374631.jpg") no-repeat;
+            background-size: cover;
+            padding: 160px 20px;
+            background-attachment: fixed !important;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            color: white;
         }
         /* @media (min-width: 992px) {
     #aboutSectionText {
