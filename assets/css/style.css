@@ -33,13 +33,12 @@
         
         #hobbies div {
             display: inline-block;
-            margin: 0 36px 10px 0;
+            margin: 0 0px 5px 5px;
             width: 110px;
             height: 110px;
             -webkit-clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
             clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
             background-color: #24292e;
-            ;
             color: #ffffff;
             font-size: 16px;
             text-align: center;
@@ -56,17 +55,6 @@
             -webkit-clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
             clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
         }
-        /*         
-        .hobbies ul li:nth-child(1) {
-            width: 250px;
-            height: 250px;
-            margin: 0 0px 10px 0;
-        } */
-        /* .hobbies ul li img:nth-child(2) {
-            width: 114px!important;
-            height: 114px!important;
-            margin: 0 0px 0px 0;
-        } */
         
         .presentation {
             background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
@@ -80,7 +68,6 @@
         
         .presentation p {
             font-size: 2rem;
-            /* font-family: 'Crimson Text', serif; */
         }
         
         #gallery p {
@@ -393,12 +380,15 @@
                 font-size: 50px;
                 margin-top: 30px;
             }
+            #hobbies div {
+                margin: 0 0px 0px 20px;
+            }
         }
         
         @media screen and (max-width: 1199px) {
             .headerTitleOverlay {
                 font-size: 60px;
-                margin-top: 30px;
+                margin-top: 50px;
                 margin-bottom: 30px;
             }
             .main-header-bb__content span {
