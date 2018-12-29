@@ -23,6 +23,6 @@
     "CONTACT_TEXT": "Si quieres contactar conmigo :",
     "FOOTER_TEXT": "Mantente apasionado y lo lograras, estoy segura!",
     "SKILLS": "Mis habilidades ",
-    "CODEQUOTE": "<em>Programar no es un trabajo, es un estilo de vida</em>",
+    "CODEQUOTE": " <blockquote class='ml-3 mr-3 text-center quote' id='codeQuote'><em><h2>Programar no es un trabajo, es un estilo de vida</h2> <em> </blockquote>",
     "AUTHOR": "<u>Un tio inteligente</u>"
 }
