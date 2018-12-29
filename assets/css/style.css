@@ -355,7 +355,7 @@
             background: url("/img/projects/computer-desk-hand-374631.jpg") no-repeat;
             background-size: cover;
             padding: 160px 20px;
-            background-attachment: fixed !important;
+            /* background-attachment: fixed !important; */
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
