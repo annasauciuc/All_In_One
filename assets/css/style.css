@@ -371,6 +371,15 @@ img {
     padding: 10px;
 } */
 
+#floating-action-button {
+    bottom: 40px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #1ab394;
+}
+
 .flex-centered {
     display: -ms-flexbox;
     display: flex;
