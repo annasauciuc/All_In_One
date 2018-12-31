@@ -18,7 +18,7 @@ function translateIndex(data) {
 }
 
 function translateProjects(data) {
-    //  document.getElementById("projectsTitle").innerHTML = data.PROJECTS;
+    document.getElementById("projectsTitle").innerHTML = data.PROJECTS;
     document.getElementById("skills").innerHTML = data.SKILLS;
     document.getElementById("floatsProject").innerHTML = data.FLOATS_TITLE;
     document.getElementById("floatsProjectText").innerHTML = data.FLOATS_TEXT;
