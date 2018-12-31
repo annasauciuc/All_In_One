@@ -58,7 +58,9 @@ $("#england").on("click", function() {
 
 });
 
-
+$(document).ready(function() {
+    $("#floating-action-button").hide();
+});
 
 $(window).scroll(function() {
     var threshold = 300; // number of pixels before bottom of page that you want to start fading
