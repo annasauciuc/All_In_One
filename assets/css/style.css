@@ -365,10 +365,11 @@ img {
 
 /******/
 
-.btnFloat {
+
+/* .btnFloat {
     background-color: #1ab394;
     padding: 10px;
-}
+} */
 
 .flex-centered {
     display: -ms-flexbox;
