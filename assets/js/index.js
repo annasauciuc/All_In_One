@@ -4,7 +4,7 @@ function translateIndex(data) {
     document.getElementById("menuAbout").innerHTML = data.MENU_ABOUT_ME;
     document.getElementById("menuContact").innerHTML = data.CONTACT;
     document.getElementById("presentationText").innerHTML = data.SUBTITLE;
-    document.getElementById("presentationTitle").innerHTML = data.TITLE;
+    document.getElementById("typed").innerHTML = data.TITLE;
     document.getElementById("aboutSection").innerHTML = data.SECTION_ABOUT_ME_TITLE;
     document.getElementById("aboutSectionText").innerHTML = data.SECTION_ABOUT_ME_TEXT;
     document.getElementById("contactTitle").innerHTML = data.CONTACT_TITLE;
@@ -73,3 +73,13 @@ $(window).scroll(function() {
     }
     $("#floating-action-button").css("opacity", op);
 });
+// initialization of text animation (typing)
+
+
+
+// var options = {
+//     strings: ["<i>First</i> sentence.", "&amp; a second sentence."],
+//     typeSpeed: 40
+// }
+
+// var typed = new Typed(".u-text-animation.u-text-animation--typing", options);

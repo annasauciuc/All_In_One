@@ -32,6 +32,7 @@ var nodes = [
         value: 40
     },
     { name: 'JQuery', src: "../../img/skills/jquery.svg", target: [0, 3, 4, 5], value: 36 },
+    { name: 'JQuery', src: "../../img/skills/scrum-logo.png", target: [0, 3, 4, 5], value: 36 },
     { name: 'Scrum', src: "", target: [0, 1, 2], value: 52 },
     { name: 'Slack', src: "../../img/skills/slack.svg", target: [0, 1, 2], value: 52 },
     { name: 'Visual_Studio_Code', src: "../../img/skills/visual.svg", target: [0, 1, 2], value: 20 }, { name: 'Css3', src: "", target: [0, 1, 2], value: 20 }

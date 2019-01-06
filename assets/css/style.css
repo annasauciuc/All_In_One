@@ -85,10 +85,11 @@ nav {
 }
 
 .headerTitleOverlay {
+    height: 295px;
     position: absolute;
-    margin-top: -50px;
+    margin-top: -40px;
     font-size: 4.625rem;
-    top: 55%;
+    bottom: 17%;
     left: 7%;
     /* transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%); */
@@ -285,7 +286,7 @@ img {
 .quoteSection {
     background: url("/img/projects/computer-desk-hand-374631.jpg") no-repeat;
     background-size: cover;
-    padding: 160px 20px;
+    padding: 110px 20px;
     /* background-attachment: fixed !important; */
     background-position: center center;
     background-repeat: no-repeat;
@@ -374,8 +375,8 @@ img {
 #floating-action-button {
     bottom: 10px;
     right: 15px;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: #1ab394;
 }
@@ -397,12 +398,50 @@ img {
     min-height: 350px;
 }
 
+.typed-cursor {
+    position: relative;
+    top: -6px;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+#presentationText {
+    -webkit-animation: 3s ease-in 0s normal forwards 1 fadein;
+    animation: 3s ease-in 0s normal forwards 1 fadein;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    76% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    76% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 
 /***** Media query *****/
 
-@media only screen and (max-width: 685px) {
+@media only screen and (max-width: 785px) {
     html {
-        font-size: 90%!important;
+        font-size: 75%!important;
     }
 }
 
@@ -431,9 +470,9 @@ img {
 }
 
 @media screen and (max-width: 1199px) {
-    * {
+    /* * {
         transition: ease all 0.5s;
-    }
+    } */
     .nav__spans span {
         height: 2px;
         width: 30px;
