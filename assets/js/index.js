@@ -73,13 +73,3 @@ $(window).scroll(function() {
     }
     $("#floating-action-button").css("opacity", op);
 });
-// initialization of text animation (typing)
-
-
-
-// var options = {
-//     strings: ["<i>First</i> sentence.", "&amp; a second sentence."],
-//     typeSpeed: 40
-// }
-
-// var typed = new Typed(".u-text-animation.u-text-animation--typing", options);
