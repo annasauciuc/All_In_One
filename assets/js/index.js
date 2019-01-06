@@ -73,3 +73,12 @@ $(window).scroll(function() {
     }
     $("#floating-action-button").css("opacity", op);
 });
+
+function navLinks(navItem, href) {
+    $(navItem).on('click', function() {
+        $(this).attr("href", "../../index.html" + href);
+    })
+
+}
+navLinks("#menuAbout", "#aboutMe");
+navLinks("#menuContact", "#contact");
