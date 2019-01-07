@@ -457,6 +457,7 @@ img {
         width: 100%;
     }
     .headerTitleOverlay {
+        height: 237px;
         width: 100%;
         font-size: 3.5rem!important;
     }
