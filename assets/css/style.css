@@ -89,7 +89,7 @@ nav {
     position: absolute;
     margin-top: -40px;
     font-size: 4.625rem;
-    bottom: 17%;
+    bottom: 19%;
     left: 7%;
     /* transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%); */
@@ -452,7 +452,7 @@ img {
         background-size: cover;
         color: rgb(41, 39, 39);
         overflow: hidden;
-        height: 700px;
+        height: 600px;
         width: 100%;
     }
     h4 {
