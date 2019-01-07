@@ -33,6 +33,7 @@ function translateProjects(data) {
     document.getElementById("formProjectText").innerHTML = data.FORM_TEXT;
     document.getElementById("sassProject").innerHTML = data.SASS_TITLE;
     document.getElementById("sassProjectText").innerHTML = data.SASS_TEXT;
+    document.getElementById("footerQuote").innerHTML = data.FOOTER_TEXT;
 }
 
 $("#spain").on("click", function() {
