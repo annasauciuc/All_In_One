@@ -89,8 +89,9 @@ nav {
     position: absolute;
     margin-top: -40px;
     font-size: 4.625rem;
-    bottom: 19%;
+    bottom: 12%;
     left: 7%;
+    right: 3%;
     /* transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%); */
 }
@@ -441,7 +442,7 @@ img {
 
 @media only screen and (max-width: 785px) {
     html {
-        font-size: 75%!important;
+        font-size: 80%!important;
     }
 }
 
@@ -454,6 +455,10 @@ img {
         overflow: hidden;
         height: 600px;
         width: 100%;
+    }
+    .headerTitleOverlay {
+        width: 100%;
+        font-size: 3.5rem!important;
     }
     h4 {
         font-size: 0.9rem;
