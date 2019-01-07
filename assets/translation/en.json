@@ -5,7 +5,7 @@
     "TITLE": "Hi !  I'm <strong>Ana Maria</strong>",
     "SUBTITLE": "I'm here only because i found what i like and i won't let it go! ",
     "SECTION_ABOUT_ME_TITLE": " About me ?!",
-    "SECTION_ABOUT_ME_TEXT": "I'm a Front End Developer! Well ,a junior developer just starting this wonderful journey, but with big aspiration, with endless dreams and a lot a hope. My journey started in the   <a href'https://20h.es/' target='_blank' class='hoverLine'> <strong><u>20h Talent Bootcamp</u>,</strong></a>where i had the oportunity to meet a lot of talented people and adquire knowledge from them. I'm a dreamer with my feet on the ground, a nature lover, world lover. I think what best defines me is the passion that i put in all that i do, no matter that is a project or just a simple matter of my cotidian life.Positive, negative, sad, happy.I have them all. Just so greatfull for the oportunity of life that was gaved to me. I never take things for granted. <br><br>Do you want to see some of my starting<a href='./html/projects.html'></a><strong><u> projects</strong></u>?",
+    "SECTION_ABOUT_ME_TEXT": "I'm a Front End Developer! Well ,a junior developer just starting this wonderful journey, but with big aspiration, with endless dreams and a lot a hope. My journey started in the   <a href'https://20h.es/' target='_blank' class='hoverLine'> <strong><u>20h Talent Bootcamp</u>,</strong></a>where i had the oportunity to meet a lot of talented people and adquire knowledge from them. I'm a dreamer with my feet on the ground, a nature lover, world lover. I think what best defines me is the passion that i put in all that i do, no matter that is a project or just a simple matter of my cotidian life.Positive, negative, sad, happy.I have them all. Just so greatfull for the oportunity of life that was gaved to me. I never take things for granted. <br><br>Do you want to see some of my starting<a href='../../html/projects.html'><strong><u> projects</strong></u>?",
     "PROJECTS": "My starting projects",
     "FLOATS_TITLE": "Floats everywhere!!",
     "FLOATS_TEXT": "This is my first responsive project made with floats. I choosed one of the best paintors to ilustrate his paintings. 'Leonid Afremov'",
@@ -21,8 +21,9 @@
     "SASS_TEXT": "Wonderfull Sass, took me a while to love him but is just wonderfull and usefull!",
     "CONTACT_TITLE": "Contact Me",
     "CONTACT_TEXT": "If you want to contact with me",
-    "FOOTER_TEXT": "Stay passionate and free and you will thrive, i am sure!",
+    "FOOTER_TEXT": "Stay passionate and you will thrive, i am sure!",
     "SKILLS": "My skills",
+    "HOBBIESTITLE": "Hobbies and Interests",
     "CODEQUOTE": "  <blockquote class='ml-3 mr-3 text-center quote' id='codeQuote'><em><h2>Programming isn’t something you do from 9 to 5. It’s not a job, it’s a way of life.</h2> <em> </blockquote>",
     "AUTHOR": "A smart guy"
 }

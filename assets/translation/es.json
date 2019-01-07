@@ -5,7 +5,7 @@
     "TITLE": "Hola !  Soy<strong> Ana Maria</strong>",
     "SUBTITLE": "Estoy aqui porque encontre lo que me gusta y no lo voy a dejar ir!",
     "SECTION_ABOUT_ME_TITLE": "Sobre mi ?!",
-    "SECTION_ABOUT_ME_TEXT": "Soy  Front End Developer! Bueno, un junior developer, que apenas comienza este maravilloso viaje, pero con grandes aspiraciones, con sueños infinitos y mucha esperanza! My viaje comenzó en el    <a href='https://20h.es/' target='_blank' class='hoverLine'> <strong>20h Talent Bootcamp,</strong></a>donde tuve la oportunidad de conocer mucha gente talentada y aprender de sus conoscimientos. Soy una soñadora pero con mis pies en la tierra, amante de la naturaleza, amante de la vida. Creo que lo que mas me define es la pasión que pongo en todo lo que hago, no importa si es un proyecto o simplemente un evento de mi vida cotidiana.Positiva, negativa, triste, feliz.Soy todo eso.Solamente muy agradecida por la oportunidad de la vida que me fue ofrecida. Nunca me tomo las cosas por sentado.<br><br>Quieres ver algunos de mis<a href='./html/projects.html'></a><strong> <u>proyectos</strong></u>?",
+    "SECTION_ABOUT_ME_TEXT": "Soy  Front End Developer! Bueno, un junior developer, que apenas comienza este maravilloso viaje, pero con grandes aspiraciones, con sueños infinitos y mucha esperanza! My viaje comenzó en el    <a href='https://20h.es/' target='_blank' class='hoverLine'> <strong>20h Talent Bootcamp,</strong></a>donde tuve la oportunidad de conocer mucha gente talentada y aprender de sus conoscimientos. Soy una soñadora pero con mis pies en la tierra, amante de la naturaleza, amante de la vida. Creo que lo que mas me define es la pasión que pongo en todo lo que hago, no importa si es un proyecto o simplemente un evento de mi vida cotidiana.Positiva, negativa, triste, feliz.Soy todo eso.Simplemente muy agradecida por la oportunidad de la vida que me fue ofrecida. Nunca me tomo las cosas por sentado.<br><br>Quieres ver algunos de mis<a href='../../html/projects.html'><strong> <u>proyectos</strong></u></a>?",
     "PROJECTS": "Mis primeros proyectos",
     "FLOATS_TITLE": "Floats en todos lados!!",
     "FLOATS_TEXT": "Este es mi primer proyecto responsive con floats. Elegí uno de los mejores pintores para mostrar sus cuadros. 'Leonid Afremov'",
@@ -23,6 +23,7 @@
     "CONTACT_TEXT": "Si quieres contactar conmigo :",
     "FOOTER_TEXT": "Mantente apasionado y lo lograras, estoy segura!",
     "SKILLS": "Mis habilidades ",
+    "HOBBIESTITLE": "Hobbies y Intereses",
     "CODEQUOTE": " <blockquote class='ml-3 mr-3 text-center quote' id='codeQuote'><em><h2>Programar no es un trabajo, es un estilo de vida</h2> <em> </blockquote>",
     "AUTHOR": "<u>Un tio inteligente</u>"
 }

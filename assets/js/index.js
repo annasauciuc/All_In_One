@@ -12,6 +12,7 @@ function translateIndex(data) {
     document.getElementById("footerQuote").innerHTML = data.FOOTER_TEXT;
     document.getElementById("codeQuote").innerHTML = data.CODEQUOTE;
     document.getElementById("authorQuote").innerHTML = data.AUTHOR;
+    document.getElementById("hobbiesTitle").innerHTML = data.HOBBIESTITLE;
     //  document.getElementById("hobbiesTitle").innerHTML = data.HOBBIESTITLE;
 
 
