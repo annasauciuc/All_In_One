@@ -78,7 +78,7 @@ nav {
     background-size: cover;
     color: rgb(41, 39, 39);
     overflow: hidden;
-    height: 1300px;
+    height: 99vh;
     width: 100%;
     /* background-color: rgba(0, 0, 0, 0.51); */
     z-index: -1;
@@ -447,17 +447,17 @@ img {
 }
 
 @media screen and (max-width:425px) {
-    .jumbo {
+    /* .jumbo {
         background: url("/img/projects/header_img.jpeg") no-repeat top center;
         position: relative;
         background-size: cover;
         color: rgb(41, 39, 39);
         overflow: hidden;
-        height: 600px;
+        height: 60vh;
         width: 100%;
-    }
+    } */
     .headerTitleOverlay {
-        height: 237px;
+        height: 23vh;
         width: 100%;
         font-size: 3.5rem!important;
     }
