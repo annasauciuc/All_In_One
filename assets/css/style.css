@@ -78,14 +78,14 @@ nav {
     background-size: cover;
     color: rgb(41, 39, 39);
     overflow: hidden;
-    height: 110.98312710911136vh;
+    height: 99.983127vh;
     width: 100%;
     /* background-color: rgba(0, 0, 0, 0.51); */
     z-index: -1;
 }
 
 .headerTitleOverlay {
-    /* height: 74.183352vh; */
+    height: 180px;
     position: absolute;
     margin-top: -40px;
     font-size: 4.625rem;
@@ -471,7 +471,7 @@ img {
         width: 100%;
     } */
     .headerTitleOverlay {
-        /* height: 44vh; */
+        height: 50px;
         width: 100%;
         font-size: 3.5rem!important;
     }
