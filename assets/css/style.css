@@ -85,7 +85,7 @@ nav {
 }
 
 .headerTitleOverlay {
-    height: 33.18335208098988vh;
+    /* height: 74.183352vh; */
     position: absolute;
     margin-top: -40px;
     font-size: 4.625rem;
@@ -235,7 +235,7 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    bottom: -200px;
+    bottom: 0px;
     right: 0;
     /* transform: translate(-50%, -50%); */
 }
@@ -471,7 +471,7 @@ img {
         width: 100%;
     } */
     .headerTitleOverlay {
-        height: 23vh;
+        /* height: 44vh; */
         width: 100%;
         font-size: 3.5rem!important;
     }
