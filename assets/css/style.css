@@ -78,14 +78,14 @@ nav {
     background-size: cover;
     color: rgb(41, 39, 39);
     overflow: hidden;
-    height: 99vh;
+    height: 110.98312710911136vh;
     width: 100%;
     /* background-color: rgba(0, 0, 0, 0.51); */
     z-index: -1;
 }
 
 .headerTitleOverlay {
-    height: 295px;
+    height: 33.18335208098988vh;
     position: absolute;
     margin-top: -40px;
     font-size: 4.625rem;
@@ -399,6 +399,20 @@ img {
     min-height: 350px;
 }
 
+.hireSection i {
+    text-align: center;
+    font-size: 2rem;
+    padding: 5px;
+}
+
+.card {
+    border: none;
+}
+
+.card p {
+    font-size: 1.31429rem;
+}
+
 .typed-cursor {
     position: relative;
     top: -6px;
@@ -461,9 +475,9 @@ img {
         width: 100%;
         font-size: 3.5rem!important;
     }
-    h4 {
+    /* h4 {
         font-size: 0.9rem;
-    }
+    } */
     #gallery p {
         font-size: 0.7rem;
     }
