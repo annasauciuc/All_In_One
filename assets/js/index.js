@@ -13,6 +13,19 @@ function translateIndex(data) {
     document.getElementById("codeQuote").innerHTML = data.CODEQUOTE;
     document.getElementById("authorQuote").innerHTML = data.AUTHOR;
     document.getElementById("hobbiesTitle").innerHTML = data.HOBBIESTITLE;
+    document.getElementById("hireTitle").innerHTML = data.HIRETITLE;
+    document.getElementById("hireWorker").innerHTML = data.HIREWORKER;
+    document.getElementById("hireWorkerText").innerHTML = data.HIREWORKERP;
+    document.getElementById("hirePassionate").innerHTML = data.HIREPASSIONATE;
+    document.getElementById("hirePassionateText").innerHTML = data.HIREPASSIONATEP;
+    document.getElementById("hireLearner").innerHTML = data.HIRELEARNER;
+    document.getElementById("hireLearnerText").innerHTML = data.HIRELEARNERP;
+    document.getElementById("hireMotivated").innerHTML = data.HIREMOTIVATED;
+    document.getElementById("hireMotivatedText").innerHTML = data.HIREMOTIVATEDP;
+    document.getElementById("hireIntime").innerHTML = data.HIREINTIME;
+    document.getElementById("hireIntimeText").innerHTML = data.HIREINTIMEP;
+    document.getElementById("hireTeam").innerHTML = data.HIRETEAMWORK;
+    document.getElementById("hireTeamText").innerHTML = data.HIRETEAMWORKP;
     //  document.getElementById("hobbiesTitle").innerHTML = data.HOBBIESTITLE;
 
 
