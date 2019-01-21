@@ -100,3 +100,6 @@ function navLinks(navItem, href) {
 }
 navLinks("#menuAbout", "#aboutMe");
 navLinks("#menuContact", "#contact");
+$(window).scroll(function() {
+	console.log( "Firing!" );
+});
