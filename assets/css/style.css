@@ -326,7 +326,7 @@ img {
 }
 
 #skillsDivs div {
-    padding-top: 30px;
+    padding-top: 25px;
     display: inline-block;
     margin: 0 0px 5px 5px;
     width: 110px;
@@ -334,7 +334,7 @@ img {
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     text-align: center;
-    background-color: #ffffff;
+    background-color: #bdf3d9;
 }
 
 .hobbiesSection {
