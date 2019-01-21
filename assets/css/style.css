@@ -310,7 +310,7 @@ img {
     clip-path: circle(50% at 50% 50%);
 }
 
-#hobbies div {
+.bubbles div {
     display: inline-block;
     margin: 0 0px 5px 5px;
     width: 110px;
@@ -325,8 +325,29 @@ img {
     font-weight: 500;
 }
 
+.greenFav {
+    color: #00af83;
+    border-color: #00af83;
+}
+
+#skillsDivs div {
+    padding-top: 25px;
+    display: inline-block;
+    margin: 0 0px 5px 5px;
+    width: 110px;
+    height: 110px;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    text-align: center;
+    background-color: #bdf3d9;
+}
+
 .hobbiesSection {
     background-color: #1ab394;
+}
+
+#skillsDivs i {
+    font-size: 4.5rem;
 }
 
 
