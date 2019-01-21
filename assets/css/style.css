@@ -305,7 +305,7 @@ img {
     clip-path: circle(50% at 50% 50%);
 }
 
-#hobbies div {
+.bubbles div {
     display: inline-block;
     margin: 0 0px 5px 5px;
     width: 110px;
@@ -326,6 +326,7 @@ img {
 }
 
 #skillsDivs div {
+    padding-top: 30px;
     display: inline-block;
     margin: 0 0px 5px 5px;
     width: 110px;
@@ -333,10 +334,15 @@ img {
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     text-align: center;
+    background-color: #ffffff;
 }
 
 .hobbiesSection {
     background-color: #1ab394;
+}
+
+#skillsDivs i {
+    font-size: 4.5rem;
 }
 
 
