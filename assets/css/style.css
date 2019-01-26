@@ -482,7 +482,7 @@ img {
 
 @media only screen and (max-width: 785px) {
     html {
-        font-size: 80%!important;
+        font-size: 90%!important;
     }
 }
 
@@ -497,7 +497,7 @@ img {
         width: 100%;
     } */
     .headerTitleOverlay {
-        height: 50px;
+        height: 100px;
         width: 100%;
         font-size: 3.5rem!important;
     }
