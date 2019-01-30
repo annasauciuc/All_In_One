@@ -99,5 +99,10 @@ function navLinks(navItem, href) {
     })
 
 }
-navLinks("#menuAbout", "#aboutMe");
+navLinks("#menuAbout", "#presentationText");
 navLinks("#menuContact", "#contact");
+
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+

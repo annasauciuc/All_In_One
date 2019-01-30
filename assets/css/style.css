@@ -210,7 +210,7 @@ a:hover {
 }
 
 .social:hover {
-    background-color: #727070;
+    background-color: #ffffff;
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
