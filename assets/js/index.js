@@ -1,4 +1,4 @@
-function translateIndex(data) {
+const translateIndex = data => {
   document.getElementById("menuMyProjects").innerHTML = data.MENU_MY_PROJECTS;
   document.getElementById("menuAbout").innerHTML = data.MENU_ABOUT_ME;
   document.getElementById("menuContact").innerHTML = data.CONTACT;
@@ -29,9 +29,9 @@ function translateIndex(data) {
   document.getElementById("hireTeam").innerHTML = data.HIRETEAMWORK;
   document.getElementById("hireTeamText").innerHTML = data.HIRETEAMWORKP;
   //  document.getElementById("hobbiesTitle").innerHTML = data.HOBBIESTITLE;
-}
+};
 
-function translateProjects(data) {
+const translateProjects = data => {
   document.getElementById("menuMyProjects").innerHTML = data.MENU_MY_PROJECTS;
   document.getElementById("menuAbout").innerHTML = data.MENU_ABOUT_ME;
   document.getElementById("menuContact").innerHTML = data.CONTACT;
@@ -51,7 +51,7 @@ function translateProjects(data) {
   document.getElementById("sassProject").innerHTML = data.SASS_TITLE;
   document.getElementById("sassProjectText").innerHTML = data.SASS_TEXT;
   document.getElementById("footerQuote").innerHTML = data.FOOTER_TEXT;
-}
+};
 
 const translation = (id, lang) => {
   document.getElementById(id).addEventListener("click", function() {
