@@ -317,7 +317,7 @@ img {
     padding-top: 30px;
 }
 
-.hobbiesSection div img {
+.bubblesSection div img {
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
 }
@@ -354,7 +354,7 @@ img {
     background-color: #bdf3d9;
 }
 
-.hobbiesSection {
+.bubblesSection {
     background-color: #1ab394;
 }
 
