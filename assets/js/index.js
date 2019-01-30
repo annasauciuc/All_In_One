@@ -99,7 +99,7 @@ function navLinks(navItem, href) {
     })
 
 }
-navLinks("#menuAbout", "#presentationText");
+navLinks("#menuAbout", "#aboutMe");
 navLinks("#menuContact", "#contact");
 
 $(document).ready(function(){
