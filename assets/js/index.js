@@ -36,7 +36,7 @@ function translateProjects(data) {
     document.getElementById("menuAbout").innerHTML = data.MENU_ABOUT_ME;
     document.getElementById("menuContact").innerHTML = data.CONTACT;
     document.getElementById("projectsTitle").innerHTML = data.PROJECTS;
-    document.getElementById("skills").innerHTML = data.SKILLS;
+    document.getElementById("skillsTitle").innerHTML = data.SKILLS;
     document.getElementById("floatsProject").innerHTML = data.FLOATS_TITLE;
     document.getElementById("floatsProjectText").innerHTML = data.FLOATS_TEXT;
     document.getElementById("whoProject").innerHTML = data.HOW_I_AM_TITLE;
