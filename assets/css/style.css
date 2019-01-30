@@ -77,7 +77,7 @@ nav {
    ********/
 
 .presentationSection {
-    background: url("/img/projects/IMG_3543.jpg") no-repeat top center;
+    background: url("/img/projects/personalPhoto.jpg") no-repeat top center;
     position: relative;
     background-size: cover;
     color: rgb(41, 39, 39);
@@ -255,7 +255,7 @@ img {
 }
 
 #projectsTitle {
-    padding-top: 80px;
+    padding-top: 150px;
 }
 
 #main p {
@@ -404,12 +404,6 @@ img {
 
 
 /******/
-
-
-/* .btnFloat {
-    background-color: #1ab394;
-    padding: 10px;
-} */
 
 #floating-action-button {
     bottom: 10px;
