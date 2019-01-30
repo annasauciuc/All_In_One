@@ -76,6 +76,7 @@ $("#england").on("click", function() {
 
 });
 
+//FloatingButton
 $(document).ready(function() {
     $("#floating-action-button").hide();
 });
@@ -91,7 +92,7 @@ $(window).scroll(function() {
     }
     $("#floating-action-button").css("opacity", op);
 });
-
+// To be able to redirect from the projects page , to home page,directly  to the bookmark #id
 function navLinks(navItem, href) {
     $(navItem).on('click', function() {
         $(this).attr("href", "../../index.html" + href);
