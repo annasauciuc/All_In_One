@@ -54,7 +54,7 @@ function translateProjects(data) {
 
 $("#spain").on("click", function() {
 
-    $.getJSON("/assets/translation/es.json")
+    $.get("/assets/translation/es.json")
         .done(function(data) {
             if (window.location.href.indexOf("index") > -1) {
                 translateIndex(data);
@@ -64,7 +64,7 @@ $("#spain").on("click", function() {
         });
 })
 $("#england").on("click", function() {
-    $.getJSON("/assets/translation/en.json")
+    $.get("/assets/translation/en.json")
         .done(function(data) {
             if (window.location.href.indexOf("index") > -1) {
                 translateIndex(data);
