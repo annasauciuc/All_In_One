@@ -76,7 +76,7 @@ nav {
    HEADER
    ********/
 
-.jumbo {
+.presentationSection {
     background: url("/img/projects/IMG_3543.jpg") no-repeat top center;
     position: relative;
     background-size: cover;
@@ -288,7 +288,7 @@ img {
     -o-background-size: cover;
     color: rgb(41, 39, 39);
     overflow: hidden;
-    height: 620px;
+    height: 640px;
     width: 100%;
     /* background-color: rgba(0, 0, 0, 0.51); */
 }
@@ -499,15 +499,6 @@ img {
 }
 
 @media screen and (max-width:425px) {
-    /* .jumbo {
-        background: url("/img/projects/header_img.jpeg") no-repeat top center;
-        position: relative;
-        background-size: cover;
-        color: rgb(41, 39, 39);
-        overflow: hidden;
-        height: 60vh;
-        width: 100%;
-    } */
     .headerTitleOverlay {
         height: 100px;
         width: 100%;
