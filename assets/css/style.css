@@ -384,8 +384,8 @@ main {
 /***** hr style *****/
 
 .underlined {
-    width: 7em;
-    border-color: #1ab394!important;
+    width: 8em;
+    border: 2px solid #1ab394!important;
     margin-bottom: 70px;
 }
 
