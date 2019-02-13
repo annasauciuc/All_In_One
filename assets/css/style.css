@@ -206,7 +206,7 @@ a:hover {
 .social {
     width: 3.2rem;
     height: 3.2rem;
-    border: 0.1rem solid #ffffff;
+    background-color: rgb(255, 255, 255);
     border-radius: 100%;
     font-size: 1.4rem;
     line-height: 3.2rem;
@@ -214,7 +214,7 @@ a:hover {
 }
 
 .social:hover {
-    background-color: #ffffff;
+    background-color: #cfcccc;
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
