@@ -38,6 +38,9 @@
     "HIREINTIME": "Siempre a tiempo",
     "HIREINTIMEP": "Llegar a tiempo hoy en días es tan raro, que me siento tan orgullosa de que esté en una reunión media hora antes. Por si acaso...",
     "HIRETEAMWORK": "Trabajo en equipo",
-    "HIRETEAMWORKP": "Tener una buena ética de trabajo es una necesidad, la capacidad de colaborar con clientes y compañeros es crucial para el desarrollo web. Siempre trato de aprender algo de las personas que me rodean. Creo que, como la educación, el aprendizaje nunca termina."
+    "HIRETEAMWORKP": "Tener una buena ética de trabajo es una necesidad, la capacidad de colaborar con clientes y compañeros es crucial para el desarrollo web. Siempre trato de aprender algo de las personas que me rodean. Creo que, como la educación, el aprendizaje nunca termina.",
+    "FACERECOGNITION": "Reconocimiento facial",
+    "FACERECOGNITION_TEXT": "Este cerebro mágico detectará caras y tus imágenes."
+
 
 }

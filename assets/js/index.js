@@ -51,6 +51,8 @@ const translateProjects = data => {
   document.getElementById("sassProject").innerHTML = data.SASS_TITLE;
   document.getElementById("sassProjectText").innerHTML = data.SASS_TEXT;
   document.getElementById("footerQuote").innerHTML = data.FOOTER_TEXT;
+  document.getElementById("faceRecognition").innerHTML = data.FACERECOGNITION;
+  document.getElementById("faceRecognitionText").innerHTML = data.FACERECOGNITION_TEXT;
 };
 
 const translation = (id, lang) => {
