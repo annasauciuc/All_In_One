@@ -52,7 +52,8 @@ const translateProjects = data => {
   document.getElementById("sassProjectText").innerHTML = data.SASS_TEXT;
   document.getElementById("footerQuote").innerHTML = data.FOOTER_TEXT;
   document.getElementById("faceRecognition").innerHTML = data.FACERECOGNITION;
-  document.getElementById("faceRecognitionText").innerHTML = data.FACERECOGNITION_TEXT;
+  document.getElementById("faceRecognitionText").innerHTML =
+    data.FACERECOGNITION_TEXT;
 };
 
 const translation = (id, lang) => {
@@ -96,4 +97,37 @@ navLinks("#menuContact", "#contact");
 
 $(document).ready(function() {
   $('[data-toggle="tooltip"]').tooltip();
+});
+
+$(document).ready(function() {
+  $("#menuMyProjects").click(function() {
+    $.get("./../../html/projects.html")
+      .done(function(data) {
+        console.log("data :", data);
+        $("#mainContainer")
+          .empty()
+          .append(data);
+      })
+      .fail(function(jqXHR) {
+        if (jqXHR.statusText !== "OK") {
+          console.log("[ERROR]: on loading json.");
+        }
+      });
+  });
+});
+$(document).ready(function() {
+  $("#home").click(function() {
+    $.get("./../../html/main.html")
+      .done(function(data) {
+        console.log("data :", data);
+        $("#mainContainer")
+          .empty()
+          .append(data);
+      })
+      .fail(function(jqXHR) {
+        if (jqXHR.statusText !== "OK") {
+          console.log("[ERROR]: on loading json.");
+        }
+      });
+  });
 });
