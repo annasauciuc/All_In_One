@@ -47,8 +47,8 @@ const GeneralConstructor = (function() {
   
   try {
     generalConstructor = GeneralConstructor.getInstance({
-      "users-table": { container: "#mainPage", constructor: mainPage },
-      "user-form": { container: "#user-form-container", constructor: userForm },
+      "mainPage": { container: "#mainPage", constructor: mainPage },
+      "projects": { container: "#projects", constructor: projects },
       
     });
   } catch (err) {

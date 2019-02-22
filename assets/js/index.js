@@ -99,35 +99,34 @@ $(document).ready(function() {
   $('[data-toggle="tooltip"]').tooltip();
 });
 
-$(document).ready(function() {
-  $("#menuMyProjects").click(function() {
-    $.get("./../../html/projects.html")
-      .done(function(data) {
-        console.log("data :", data);
-        $("#mainContainer")
-          .empty()
-          .append(data);
-      })
-      .fail(function(jqXHR) {
-        if (jqXHR.statusText !== "OK") {
-          console.log("[ERROR]: on loading json.");
-        }
-      });
-  });
-});
-$(document).ready(function() {
-  $("#home").click(function() {
-    $.get("./../../html/main.html")
-      .done(function(data) {
-        console.log("data :", data);
-        $("#mainContainer")
-          .empty()
-          .append(data);
-      })
-      .fail(function(jqXHR) {
-        if (jqXHR.statusText !== "OK") {
-          console.log("[ERROR]: on loading json.");
-        }
-      });
-  });
-});
+
+
+
+ generalConstructor.construct("projects");
+ generalConstructor.construct("mainPage");
+createItemsConstructor();
+
+ /********************************************
+   * FUNCTIONS TO DISPLAY LAST CHANGE ON NAV
+   ********************************************/
+  function createItemsConstructor() {
+    const menuItems = [
+      {
+        selector: "#home",
+        constructor: "mainPage"
+      },
+      {
+        selector: "#menuMyProjects",
+        constructor: "projects"
+      }
+    ];
+
+    for (menuData of menuItems) {
+      const { selector, constructor } = menuData;
+      document
+        .querySelector(selector)
+        .addEventListener("click", function(event) {
+          generalConstructor.construct(constructor);
+        });
+    }
+  }
