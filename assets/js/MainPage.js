@@ -1,9 +1,7 @@
-
 class MainPage {
   construct = function(container) {
     $.get("./../../html/main.html")
       .done(function(data) {
-       
         container.empty().append(data);
       })
       .fail(function(jqXHR) {
@@ -14,4 +12,3 @@ class MainPage {
   };
 }
 const mainPage = new MainPage();
-

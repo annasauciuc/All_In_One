@@ -5,52 +5,52 @@
  * @return {function} getInstance
  */
 const GeneralConstructor = (function() {
-    let instance;
-    let constructors;
-  
-    const targetContainer = $("#mainContainer");
-  
-    function init(classes) {
-      constructors = classes;
-  
-      function construct(constructorKey) {
-        if (
-          constructors[constructorKey] &&
-          targetContainer.find(constructors[constructorKey]["container"])
-            .length === 0
-        ) {
-          constructors[constructorKey]["constructor"].construct(targetContainer);
-        }
+  let instance;
+  let constructors;
+
+  const targetContainer = $("#mainContainer");
+
+  function init(classes) {
+    constructors = classes;
+    console.log('constructors', constructors)
+
+    function construct(constructorKey) {
+      if (
+        constructors[constructorKey] &&
+        targetContainer.find(constructors[constructorKey]["container"])
+          .length === 0
+      ) {
+        constructors[constructorKey]["constructor"].construct(targetContainer);
       }
-  
-      return {
-        constructors,
-        construct
-      };
     }
-  
+console.log('construct :', construct);
     return {
-      getInstance: function(classes) {
-        if (!instance && classes instanceof Object) {
-          instance = init(classes);
-        } else {
-          throw new Error(
-            "GeneralConstructor receive a bad parameter: " + classes
-          );
-        }
-        return instance;
-      }
+      constructors,
+      construct
     };
-  })();
-  
-  let generalConstructor;
-  
-  try {
-    generalConstructor = GeneralConstructor.getInstance({
-      "mainPage": { container: "#mainPage", constructor: mainPage },
-      "projects": { container: "#projects", constructor: projects },
-      
-    });
-  } catch (err) {
-    alert(err.name + " " + err.message);
   }
+
+  return {
+    getInstance: function(classes) {
+      if (!instance && classes instanceof Object) {
+        instance = init(classes);
+      } else {
+        throw new Error(
+          "GeneralConstructor receive a bad parameter: " + classes
+        );
+      }
+      return instance;
+    }
+  };
+})();
+
+let generalConstructor;
+
+try {
+  generalConstructor = GeneralConstructor.getInstance({
+    mainPage: { container: "#mainPage", constructor: mainPage },
+    projects: { container: "#projects", constructor: projects }
+  });
+} catch (err) {
+  alert(err.name + " " + err.message);
+}

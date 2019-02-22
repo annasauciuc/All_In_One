@@ -99,34 +99,38 @@ $(document).ready(function() {
   $('[data-toggle="tooltip"]').tooltip();
 });
 
-
-
-
- generalConstructor.construct("projects");
- generalConstructor.construct("mainPage");
+generalConstructor.construct("projects");
+generalConstructor.construct("mainPage");
 createItemsConstructor();
 
- /********************************************
-   * FUNCTIONS TO DISPLAY LAST CHANGE ON NAV
-   ********************************************/
-  function createItemsConstructor() {
-    const menuItems = [
-      {
-        selector: "#home",
-        constructor: "mainPage"
-      },
-      {
-        selector: "#menuMyProjects",
-        constructor: "projects"
-      }
-    ];
+setTimeout(() => {
+  let typed = new Typed("#typed", {
+    // stringsElement: '#typed-strings'
+    strings: ["Hi ! ", "Hi ! <br>I'm <strong>Ana Maria</strong> "],
+    typeSpeed: 60,
+    backDelay: 900
+  });
+}, 200);
 
-    for (menuData of menuItems) {
-      const { selector, constructor } = menuData;
-      document
-        .querySelector(selector)
-        .addEventListener("click", function(event) {
-          generalConstructor.construct(constructor);
-        });
+/********************************************
+ * FUNCTIONS TO DISPLAY LAST CHANGE ON NAV
+ ********************************************/
+function createItemsConstructor() {
+  const menuItems = [
+    {
+      selector: "#home",
+      constructor: "mainPage"
+    },
+    {
+      selector: "#menuMyProjects",
+      constructor: "projects"
     }
+  ];
+
+  for (menuData of menuItems) {
+    const { selector, constructor } = menuData;
+    document.querySelector(selector).addEventListener("click", function(event) {
+      generalConstructor.construct(constructor);
+    });
   }
+}
