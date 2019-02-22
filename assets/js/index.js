@@ -103,15 +103,6 @@ generalConstructor.construct("projects");
 generalConstructor.construct("mainPage");
 createItemsConstructor();
 
-setTimeout(() => {
-  let typed = new Typed("#typed", {
-    // stringsElement: '#typed-strings'
-    strings: ["Hi ! ", "Hi ! <br>I'm <strong>Ana Maria</strong> "],
-    typeSpeed: 60,
-    backDelay: 900
-  });
-}, 200);
-
 /********************************************
  * FUNCTIONS TO DISPLAY LAST CHANGE ON NAV
  ********************************************/
@@ -133,4 +124,12 @@ function createItemsConstructor() {
       generalConstructor.construct(constructor);
     });
   }
+  setTimeout(() => {
+    let typed = new Typed("#typed", {
+      // stringsElement: '#typed-strings'
+      strings: ["Hi ! ", "Hi ! <br>I'm <strong>Ana Maria</strong> "],
+      typeSpeed: 60,
+      backDelay: 900
+    });
+  }, 200);
 }

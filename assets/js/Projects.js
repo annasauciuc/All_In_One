@@ -1,10 +1,10 @@
 class Projects {
   construct = function(container) {
     $.get("./../../html/projects.html")
-      .done(function(data) {
+      .then(data => {
         container.empty().append(data);
       })
-      .fail(function(jqXHR) {
+      .catch(jqXHR => {
         if (jqXHR.statusText !== "OK") {
           console.log("[ERROR]: on loading json.");
         }
