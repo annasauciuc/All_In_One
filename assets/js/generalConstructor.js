@@ -12,18 +12,27 @@ const GeneralConstructor = (function() {
 
   function init(classes) {
     constructors = classes;
-    console.log('constructors', constructors)
 
     function construct(constructorKey) {
+      console.log("constructorKey", constructorKey);
       if (
         constructors[constructorKey] &&
         targetContainer.find(constructors[constructorKey]["container"])
           .length === 0
       ) {
+        console.log(
+          " constructors[constructorKey]",
+          constructors[constructorKey]
+        );
         constructors[constructorKey]["constructor"].construct(targetContainer);
       }
+    //   if (constructorKey === "projects") {
+    //     console.log(" window.location.href :", window.location.href);
+    //     //location.href="../../index.html" +'/'+ constructorKey;
+    //     window.location.replace("/index.html" ,+'/index.html'+ constructorKey);
+    //   }
     }
-console.log('construct :', construct);
+
     return {
       constructors,
       construct

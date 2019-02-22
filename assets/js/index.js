@@ -88,6 +88,9 @@ $(window).scroll(function() {
 });
 // To be able to redirect from the projects page , to home page,directly  to the bookmark #id
 const navLinks = (navItem, href) => {
+ 
+  console.log('href :', href);
+  console.log('navitem :', navItem);
   $(navItem).on("click", function() {
     $(this).attr("href", "../../index.html" + href);
   });
