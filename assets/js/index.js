@@ -58,10 +58,11 @@ const translateProjects = data => {
 const translation = (id, lang) => {
   document.getElementById(id).addEventListener("click", function() {
     $.get(lang).done(function(data) {
-      if (window.location.href.indexOf("index") > -1) {
-        translateIndex(data);
-      } else if (window.location.href.indexOf("projects") > -1) {
+      if (window.location.href.indexOf("projects") > -1) {
         translateProjects(data);
+      }
+      else if (window.location.href.indexOf("#") > -1) {
+        translateIndex(data);
       }
     });
   });
