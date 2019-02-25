@@ -52,7 +52,8 @@ const translateProjects = data => {
   document.getElementById("sassProjectText").innerHTML = data.SASS_TEXT;
   document.getElementById("footerQuote").innerHTML = data.FOOTER_TEXT;
   document.getElementById("faceRecognition").innerHTML = data.FACERECOGNITION;
-  document.getElementById("faceRecognitionText").innerHTML = data.FACERECOGNITION_TEXT;
+  document.getElementById("faceRecognitionText").innerHTML =
+    data.FACERECOGNITION_TEXT;
 };
 
 const translation = (id, lang) => {
@@ -60,8 +61,7 @@ const translation = (id, lang) => {
     $.get(lang).done(function(data) {
       if (window.location.href.indexOf("projects") > -1) {
         translateProjects(data);
-      }
-      else if (window.location.href.indexOf("#") > -1) {
+      } else {
         translateIndex(data);
       }
     });
