@@ -1,9 +1,9 @@
-const translateIndex = data => {
+const translateData = data => {
   for (const key in data) {
     let ids = document.getElementById(key);
     if (ids) {
-      const element = data[key];
-      document.getElementById(key).innerHTML = element;
+      const newText = data[key];
+      document.getElementById(key).innerHTML = newText;
     }
   }
 };
@@ -15,8 +15,8 @@ const translation = (id, lang) => {
     });
   });
 };
-translation("spain", "/assets/translation/es.json");
-translation("england", "/assets/translation/en.json");
+translateData("spain", "/assets/translation/es.json");
+translateData("england", "/assets/translation/en.json");
 
 //FloatingButton
 
@@ -42,8 +42,8 @@ const navLinks = (navItem, href) => {
     $(this).attr("href", "../../index.html" + href);
   });
 };
-navLinks("#menuAbout", "#aboutMe");
-navLinks("#menuContact", "#contact");
+navLinks("#menuAbout", "#SECTION_ABOUT_ME_TITLE");
+navLinks("#menuContact", "#CONTACT_TITLE");
 
 $(document).ready(function() {
   $('[data-toggle="tooltip"]').tooltip();
