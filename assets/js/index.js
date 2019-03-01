@@ -1,6 +1,7 @@
 const translateData = data => {
   for (const key in data) {
     let ids = document.getElementById(key);
+    console.log('ids :', ids);
     if (ids) {
       const newText = data[key];
       document.getElementById(key).innerHTML = newText;
@@ -11,12 +12,13 @@ const translateData = data => {
 const translation = (id, lang) => {
   document.getElementById(id).addEventListener("click", function() {
     $.get(lang).done(function(data) {
-      translateIndex(data);
+      console.log('data', data)
+      translateData(data);
     });
   });
 };
-translateData("spain", "/assets/translation/es.json");
-translateData("england", "/assets/translation/en.json");
+translation("spain", "/assets/translation/es.json");
+translation("england", "/assets/translation/en.json");
 
 //FloatingButton
 
