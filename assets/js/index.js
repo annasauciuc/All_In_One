@@ -1,69 +1,17 @@
 const translateIndex = data => {
-  document.getElementById("menuMyProjects").innerHTML = data.MENU_MY_PROJECTS;
-  document.getElementById("menuAbout").innerHTML = data.MENU_ABOUT_ME;
-  document.getElementById("menuContact").innerHTML = data.CONTACT;
-  document.getElementById("presentationText").innerHTML = data.SUBTITLE;
-  document.getElementById("typed").innerHTML = data.TITLE;
-  document.getElementById("aboutSection").innerHTML =
-    data.SECTION_ABOUT_ME_TITLE;
-  document.getElementById("aboutSectionText").innerHTML =
-    data.SECTION_ABOUT_ME_TEXT;
-  document.getElementById("contactTitle").innerHTML = data.CONTACT_TITLE;
-  document.getElementById("contactText").innerHTML = data.CONTACT_TEXT;
-  document.getElementById("footerQuote").innerHTML = data.FOOTER_TEXT;
-  document.getElementById("codeQuote").innerHTML = data.CODEQUOTE;
-  document.getElementById("authorQuote").innerHTML = data.AUTHOR;
-  document.getElementById("hobbiesTitle").innerHTML = data.HOBBIESTITLE;
-  document.getElementById("hireTitle").innerHTML = data.HIRETITLE;
-  document.getElementById("hireWorker").innerHTML = data.HIREWORKER;
-  document.getElementById("hireWorkerText").innerHTML = data.HIREWORKERP;
-  document.getElementById("hirePassionate").innerHTML = data.HIREPASSIONATE;
-  document.getElementById("hirePassionateText").innerHTML =
-    data.HIREPASSIONATEP;
-  document.getElementById("hireLearner").innerHTML = data.HIRELEARNER;
-  document.getElementById("hireLearnerText").innerHTML = data.HIRELEARNERP;
-  document.getElementById("hireMotivated").innerHTML = data.HIREMOTIVATED;
-  document.getElementById("hireMotivatedText").innerHTML = data.HIREMOTIVATEDP;
-  document.getElementById("hireIntime").innerHTML = data.HIREINTIME;
-  document.getElementById("hireIntimeText").innerHTML = data.HIREINTIMEP;
-  document.getElementById("hireTeam").innerHTML = data.HIRETEAMWORK;
-  document.getElementById("hireTeamText").innerHTML = data.HIRETEAMWORKP;
-  //  document.getElementById("hobbiesTitle").innerHTML = data.HOBBIESTITLE;
-};
-
-const translateProjects = data => {
-  document.getElementById("menuMyProjects").innerHTML = data.MENU_MY_PROJECTS;
-  document.getElementById("menuAbout").innerHTML = data.MENU_ABOUT_ME;
-  document.getElementById("menuContact").innerHTML = data.CONTACT;
-  document.getElementById("projectsTitle").innerHTML = data.PROJECTS;
-  document.getElementById("skillsTitle").innerHTML = data.SKILLS;
-  document.getElementById("floatsProject").innerHTML = data.FLOATS_TITLE;
-  document.getElementById("floatsProjectText").innerHTML = data.FLOATS_TEXT;
-  document.getElementById("whoProject").innerHTML = data.HOW_I_AM_TITLE;
-  document.getElementById("whoProjectText").innerHTML = data.HOW_I_AM_TEXT;
-  document.getElementById("adminProject").innerHTML = data.ADMINISTRATION_TITLE;
-  document.getElementById("adminProjectText").innerHTML =
-    data.ADMINISTRATION_TEXT;
-  document.getElementById("netflixProject").innerHTML = data.NETFLIX_TITLE;
-  document.getElementById("netflixProjectText").innerHTML = data.NETFLIX_TEXT;
-  document.getElementById("formProject").innerHTML = data.FORM_TITLE;
-  document.getElementById("formProjectText").innerHTML = data.FORM_TEXT;
-  document.getElementById("sassProject").innerHTML = data.SASS_TITLE;
-  document.getElementById("sassProjectText").innerHTML = data.SASS_TEXT;
-  document.getElementById("footerQuote").innerHTML = data.FOOTER_TEXT;
-  document.getElementById("faceRecognition").innerHTML = data.FACERECOGNITION;
-  document.getElementById("faceRecognitionText").innerHTML =
-    data.FACERECOGNITION_TEXT;
+  for (const key in data) {
+    let ids = document.getElementById(key);
+    if (ids) {
+      const element = data[key];
+      document.getElementById(key).innerHTML = element;
+    }
+  }
 };
 
 const translation = (id, lang) => {
   document.getElementById(id).addEventListener("click", function() {
     $.get(lang).done(function(data) {
-      if (window.location.href.indexOf("projects") > -1) {
-        translateProjects(data);
-      } else {
-        translateIndex(data);
-      }
+      translateIndex(data);
     });
   });
 };
