@@ -42,8 +42,8 @@ const navLinks = (navItem, href) => {
     $(this).attr("href", "../../index.html" + href);
   });
 };
-navLinks("#menuAbout", "#SECTION_ABOUT_ME_TITLE");
-navLinks("#menuContact", "#CONTACT_TITLE");
+navLinks("#MENU_ABOUT_ME", "#SECTION_ABOUT_ME_TITLE");
+navLinks("#CONTACT", "#CONTACT_TITLE");
 
 $(document).ready(function() {
   $('[data-toggle="tooltip"]').tooltip();
