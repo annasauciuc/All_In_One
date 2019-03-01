@@ -71,21 +71,23 @@ translation("spain", "/assets/translation/es.json");
 translation("england", "/assets/translation/en.json");
 
 //FloatingButton
-$(document).ready(function() {
-  $("#floating-action-button").hide();
-});
 
-$(window).scroll(function() {
-  var threshold = 300; // number of pixels before bottom of page that you want to start fading
-  // var op = (($(document).height() - $(window).height()) - $(window).scrollTop()) / threshold;
-  var op = $(window).scrollTop() / threshold;
-  if (op <= 0) {
-    $("#floating-action-button").hide();
+const floatingButton = document.querySelector("#floating-action-button");
+floatingButton.style.display = "none";
+const handleFloatingButton = () => {
+  const threshold = 300; // number of pixels before bottom of page that you want to start fading
+  const opac = window.scrollY / threshold;
+  floatingButton.style.display = "block";
+
+  if (opac <= 0) {
+    floatingButton.style.opacity = "0.0";
   } else {
-    $("#floating-action-button").show();
+    floatingButton.style.opacity = "1.0";
   }
-  $("#floating-action-button").css("opacity", op);
-});
+  floatingButton.style.opacity = `${opac}`;
+};
+window.addEventListener("scroll", handleFloatingButton);
+
 // To be able to redirect from the projects page , to home page,directly  to the bookmark #id
 const navLinks = (navItem, href) => {
   $(navItem).on("click", function() {
