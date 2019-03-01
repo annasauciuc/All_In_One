@@ -38,12 +38,12 @@ window.addEventListener("scroll", handleFloatingButton);
 
 // To be able to redirect from the projects page , to home page,directly  to the bookmark #id
 const navLinks = (navItem, href) => {
-  $(navItem).on("click", function() {
-    $(this).attr("href", "../../index.html" + href);
+  document.getElementById(navItem).addEventListener("click", function() {
+    this.setAttribute("href", "../../index.html" + href);
   });
 };
-navLinks("#MENU_ABOUT_ME", "#SECTION_ABOUT_ME_TITLE");
-navLinks("#CONTACT", "#CONTACT_TITLE");
+navLinks("MENU_ABOUT_ME", "#SECTION_ABOUT_ME_TITLE");
+navLinks("CONTACT", "#CONTACT_TITLE");
 
 $(document).ready(function() {
   $('[data-toggle="tooltip"]').tooltip();
