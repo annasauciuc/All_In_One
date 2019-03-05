@@ -25,7 +25,6 @@ body {
     font-family: 'Alice', serif;
     font-size: 1rem;
     background-color: #24292e;
-    /* color: rgb(77, 77, 77) !important; */
 }
 
 h1 {
@@ -34,7 +33,6 @@ h1 {
     color: rgb(226, 224, 224);
     font-weight: 500;
     letter-spacing: 1px;
-    line-height: 70px !important;
     /* text-shadow: 1px 1px 0 #f5f5f5, 2px 2px 0 rgb(131, 36, 36); */
 }
 
@@ -61,13 +59,12 @@ strong {
    ********/
 
 nav {
-    /* background-color: rgba(0, 0, 0, 0.3); */
     background-color: #24292e;
     color: rgb(255, 255, 255);
 }
 
-.nav-link {
-    color: white!important;
+#navUl .nav-link {
+    color: white;
 }
 
 .navbar-dark .navbar-toggler {
@@ -111,7 +108,7 @@ nav {
 
 footer {
     background-color: #24292e;
-    color: hsla(0, 0%, 100%, .75);
+    color: hsla(0, 0%, 100%, 0.75);
 }
 
 
@@ -122,7 +119,6 @@ footer {
 a {
     text-decoration: none;
     color: #111;
-    cursor: pointer!important;
 }
 
 a:hover {
@@ -231,7 +227,7 @@ img {
 
 .img-fluid {
     width: 100%;
-    transition: transform 1s cubic-bezier(.7, -0.39, .31, 1.38);
+    transition: transform 1s cubic-bezier(0.7, -0.39, 0.31, 1.38);
     box-shadow: 0.1rem 2rem 4rem rgba(0, 0, 0, 0.4);
 }
 
@@ -240,7 +236,7 @@ img {
 }
 
 .presentation {
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
     position: absolute;
     top: 0;
     left: 0;
@@ -277,11 +273,6 @@ main {
     margin: auto;
 }
 
-.btn-contact {
-    background-color: #24292e;
-    color: hsla(0, 0%, 100%, .75)!important;
-}
-
 
 /***********
    SECTIONS
@@ -312,14 +303,14 @@ main {
 }
 
 .container-image {
-    background-color: #e9e9e9 !important;
+    background-color: #e9e9e9;
 }
 
 .quoteSection {
     background: url("/img/projects/computer-desk-hand-374631.jpg") no-repeat;
     background-size: cover;
     padding: 110px 20px;
-    /* background-attachment: fixed !important; */
+    /* background-attachment: fixed ; */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -385,12 +376,8 @@ main {
 
 .underlined {
     width: 8em;
-    border: 2px solid #1ab394!important;
+    border: 2px solid #1ab394;
     margin-bottom: 70px;
-}
-
-.hrStyle {
-    border-color: rgb(219, 217, 217) !important;
 }
 
 
@@ -411,7 +398,7 @@ main {
     /* For centering text inside .photo-overlay */
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, 0.7);
     opacity: 0;
     transition: opacity .5s;
 }
@@ -439,10 +426,6 @@ main {
     align-items: center;
     -ms-flex-pack: center;
     justify-content: center;
-}
-
-.bg-white {
-    background-color: #fff !important;
 }
 
 .height-600 {
@@ -510,22 +493,14 @@ main {
 
 @media only screen and (max-width: 785px) {
     html {
-        font-size: 85%!important;
+        font-size: 85%;
     }
 }
 
-@media screen and (max-width:425px) {
-    .headerTitleOverlay {
-        height: 100px;
-        width: 100%;
-        font-size: 3.5rem!important;
-    }
+@media screen and (max-width: 425px) {
     .quote {
         padding-top: 0px;
     }
-    /* h4 {
-        font-size: 0.9rem;
-    } */
     #gallery p {
         font-size: 0.7rem;
     }
