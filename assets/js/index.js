@@ -1,7 +1,6 @@
 const translateData = data => {
   for (const key in data) {
     let ids = document.getElementById(key);
-    console.log('ids :', ids);
     if (ids) {
       const newText = data[key];
       document.getElementById(key).innerHTML = newText;
@@ -12,7 +11,6 @@ const translateData = data => {
 const translation = (id, lang) => {
   document.getElementById(id).addEventListener("click", function() {
     $.get(lang).done(function(data) {
-      console.log('data', data)
       translateData(data);
     });
   });
@@ -38,7 +36,7 @@ const handleFloatingButton = () => {
 };
 window.addEventListener("scroll", handleFloatingButton);
 
-// To be able to redirect from the projects page , to home page,directly  to the bookmark #id
+// To be able to redirect from the projects page , to home page directly  to the bookmark #id
 const navLinks = (navItem, href) => {
   document.getElementById(navItem).addEventListener("click", function() {
     this.setAttribute("href", "../../index.html" + href);
@@ -46,7 +44,3 @@ const navLinks = (navItem, href) => {
 };
 navLinks("MENU_ABOUT_ME", "#SECTION_ABOUT_ME_TITLE");
 navLinks("CONTACT", "#CONTACT_TITLE");
-
-$(document).ready(function() {
-  $('[data-toggle="tooltip"]').tooltip();
-});

@@ -85,7 +85,6 @@ nav {
     overflow: hidden;
     height: 99.983127vh;
     width: 100%;
-    /* background-color: rgba(0, 0, 0, 0.51); */
     z-index: -1;
 }
 
@@ -157,10 +156,6 @@ a:hover {
 
 .icon-twitter {
     color: #099af5;
-}
-
-.icon-instagram {
-    color: #e71f44;
 }
 
 .icon-github {
@@ -254,7 +249,7 @@ img {
     margin: auto auto;
 }
 
-#projectsTitle {
+#PROJECTS {
     padding-top: 150px;
 }
 
@@ -264,13 +259,6 @@ main {
 
 #main p {
     font-size: 1.2rem;
-}
-
-.form-signin {
-    width: 100%;
-    max-width: 930px;
-    padding: 15px;
-    margin: auto;
 }
 
 
@@ -446,46 +434,8 @@ main {
     font-size: 1.31429rem;
 }
 
-.typed-cursor {
-    position: relative;
-    top: -6px;
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
-
 .tooltip {
     pointer-events: none;
-}
-
-#presentationText {
-    -webkit-animation: 3s ease-in 0s normal forwards 1 fadein;
-    animation: 3s ease-in 0s normal forwards 1 fadein;
-}
-
-@keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-    76% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-    76% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
 }
 
 
@@ -498,14 +448,8 @@ main {
 }
 
 @media screen and (max-width: 425px) {
-    .quote {
-        padding-top: 0px;
-    }
     #gallery p {
         font-size: 0.7rem;
-    }
-    .quote {
-        padding-top: 0;
     }
     h1 {
         font-size: 3.7rem;
